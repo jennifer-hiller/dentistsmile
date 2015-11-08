@@ -1,31 +1,35 @@
-- image_thumb: gallery-small.jpg
-  image_large: gallery-large.jpg
-  image_alt: something meaningful
+- image_thumb: 001s.jpg
+  image_large: 001.jpg
 
-- image_thumb: gallery-small2.jpg
-  image_large: gallery-large.jpg
-  image_alt: something meaningful
+- image_thumb: 002s.jpg
+  image_large: 002.jpg
 
-- image_thumb: gallery-small.jpg
-  image_large: gallery-large.jpg
-  image_alt: something meaningful
+- image_thumb: 003s.jpg
+  image_large: 003.jpg
 
-- image_thumb: gallery-small2.jpg
-  image_large: gallery-large.jpg
-  image_alt: something meaningful
+- image_thumb: 004s.jpg
+  image_large: 004.jpg
 
-- image_thumb: gallery-small2.jpg
-  image_large: gallery-large.jpg
-  image_alt: something meaningful
+- image_thumb: 005s.jpg
+  image_large: 005.jpg
 
-- image_thumb: gallery-small.jpg
-  image_large: gallery-large.jpg
-  image_alt: something meaningful
+- image_thumb: 006s.jpg
+  image_large: 006.jpg
 
-- image_thumb: gallery-small2.jpg
-  image_large: gallery-large.jpg
-  image_alt: something meaningful
+- image_thumb: 007s.jpg
+  image_large: 007.jpg
 
-- image_thumb: gallery-small.jpg
-  image_large: gallery-large.jpg
-  image_alt: something meaningful
+- image_thumb: 008s.jpg
+  image_large: 008.jpg
+
+- image_thumb: 009s.jpg
+  image_large: 009.jpg
+
+- image_thumb: 010s.jpg
+  image_large: 010.jpg
+
+- image_thumb: 011s.jpg
+  image_large: 011.jpg
+
+- image_thumb: 012s.jpg
+  image_large: 012.jpg

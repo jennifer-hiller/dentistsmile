@@ -1,0 +1,44 @@
+[
+	{
+		"Season" : "2015-2016",
+		"concerts" : [
+			{
+				"date" : "December 6, 2015",
+				"time" : "3pm",
+				"title" : "Winter Holidays",
+				"location" : "RHCC Community Center"
+			},
+			{
+				"date" : "October 18, 2015",
+				"time" : "3pm",
+				"title" : "Fall Into Halloween",
+				"location" : "RHCC Community Center"
+			}
+		]
+	},
+	{
+		"Season" : "2014-2015",
+		"concerts" : [
+			{
+				"date" : "July 12, 2015",
+				"title" : "Picnic and Pops",
+				"location" : "Palos Verdes High School, RHE (Courtyard)"
+			},
+			{
+				"date" : "May 17, 2015",
+				"title" : "And All That Jazz",
+				"location" : "RHCC Community Center"
+			},
+			{
+				"date" : "December 7, 2014",
+				"title" : "Home for the Holidays",
+				"location" : "RHCC Community Center"
+			},
+			{
+				"date" : "October 19, 2014",
+				"title" : "Bewitching Hour",
+				"location" : "RHCC Community Center"
+			}
+		]
+	}
+]

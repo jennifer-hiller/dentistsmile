@@ -28,8 +28,11 @@
         font-size: 2rem;
         color: $white;
     }
-    h3 {
+    h3, h4, h5, a {
         color: $white;
+    }
+    a {
+        text-decoration: underline;
     }
     ul {
         @extend %no-bullet;
