@@ -113,9 +113,9 @@ layout: default
 <div id="tickets" class="tickets">
 	<div class="container-fluid">
 		<h2 class="section-title">Tickets</h2>
-		{% include tickets.md %}
 		{% capture tickets %}{% include tickets.md %}{% endcapture %}
 		{{ tickets | markdownify }}
+		{% include tickets.html %}
 	</div>
 </div>
 <!-- End tickets -->
