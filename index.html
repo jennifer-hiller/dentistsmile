@@ -50,6 +50,8 @@ layout: default
 </div>
 <!-- End 3 columns -->
 
+
+
 <!-- Start About -->
 <div id="about" class="about">
 	<div class="container-fluid">
@@ -66,18 +68,26 @@ layout: default
 	<div class="container-fluid">
 		<h2 class="section-title">Concerts</h2>
 			{% for season in site.data.concerts %}
-				<h3>{{ season.Season }}</h3>
+				<h3>{{ season.Season }} Season</h3>
 				<table class="table">
 					<thead>
-						<th>Date</th>
-						<th>Title</th>
-						<th>Location</th>
+						<th style="width: 40%;">Date</th>
+						<th style="width: 30%;">Title</th>
+						<th style="width: 30%;">Location</th>
 					</thead>
 					<tbody>
 						{% for concert in season.concerts %}
 							<tr>
 								<td>{{ concert.date }}, {{ concert.time }}</td>
-								<td>{{ concert.title }}</td>
+								<td>
+									{% if concert.pdf %}
+									<a href="{{ concert.pdf }}" target="_blank">
+										{{ concert.title }}
+									</a>
+									{% else %}
+										{{ concert.title }}
+									{% endif %}
+								</td>
 								<td>{{ concert.location }}</td>
 							</tr>
 						{% endfor %}
@@ -94,6 +104,7 @@ layout: default
 		<h2 class="section-title">Support</h2> 
 		{% capture support %}{% include support.md %}{% endcapture %}
 		{{ support | markdownify }}
+
 		{% include donate.html %}
 	</div>
 </div>
@@ -108,6 +119,17 @@ layout: default
 	</div>
 </div>
 <!-- End tickets -->
+
+<!-- Start new members -->
+<div id="newmembers" class="newmembers">
+	<div class="container-fluid">
+		<h2 class="section-title">New Members</h2>
+		{% capture newmembers %}{% include newmembers.md %}{% endcapture %}
+		{{ newmembers | markdownify }}
+		<h3><a href="#sample" data-toggle="modal" data-target="#sample">See a list of some of our prior material (difficulty levels range from 3 to 5)</a></h3>
+	</div>
+</div>
+<!-- End new members -->
 
 <!-- Start Gallery -->
 <div id="gallery" class="gallery">
@@ -127,3 +149,37 @@ layout: default
 
 </div>
 <!-- End Gallery -->
+
+<!-- start sample -->
+<div class="modal fade" id="sample" tabindex="-1" role="dialog" aria-labelledby="sampleTitle">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="sampleTitle">Concert Material Examples</h4>
+      </div>
+      <div class="modal-body">
+      	<table class="table">
+	      	<thead>
+	      		<tr>
+	      			<th>Title</th>
+	      			<th>Composer</th>
+	      		</tr>
+	      	</thead>
+	      	<tbody>
+	      		{% for piece in site.data.sample %}
+	      			<tr>
+	      				<td>{{ piece.title }}</td>
+	      				<td>{{ piece.composer }}</td>
+	      			</tr>
+	      		{% endfor %}
+	      	</tbody>
+      	</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end sample -->
